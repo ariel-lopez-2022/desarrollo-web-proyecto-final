@@ -1,0 +1,14 @@
+            /* quienes somos */
+.quienes-somos{
+   background-color:gray;
+   border-radius:10px 10px ; 
+}
+@media screen and (min-width: 992px) {
+    .quienes-somos{
+        background-image: url("../images/pantallas/fondo1.jpg");
+        background-repeat: no-repeat;
+        background-size:cover ;
+        border-radius:10px 10px 0 0; 
+               
+    }   
+}                

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* map para tamaños de fontzise y otros */
+/* mixin se utiliza como una clase propia en productos*/
+/* mixin se utiliza como solo para estilo de titulo principal*/
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+body main .centrar-margin {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/*   extend para  botones de productos y formularios */
+.formulario .boton--formulario, .card .card-body .btn {
+  background: #8E0384;
+  padding: 0.5rem;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/*Animacion Titulo principal header*/
+@keyframes titulo_principal {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.3, 1.3);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  75% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* Animacion flecha index*/
+@keyframes flecha {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+    color: #f938ec;
+  }
+}
+header {
+  background-image: url("../images/pantallas/header-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+header .logo {
+  width: 150px;
+}
+header .bi-list {
+  color: #8E0384;
+  font-size: 2.5rem;
+}
+header .nav-item {
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background: radial-gradient(circle, #f938ec, #8E0384);
+  margin: 5px;
+}
+header .nav-link {
+  color: white;
+}
+header .nav-link:hover {
+  color: #8E0384;
+  background: white;
+  border-radius: 4px;
+}
+header .dropdown-menu {
+  background: radial-gradient(circle, #f938ec, #8E0384);
+}
+header .dropdown-menu .dropdown-item {
+  color: white;
+}
+header .dropdown-menu .dropdown-item:hover {
+  background: #8E0384;
+}
+header .titulo__principal {
+  color: rgb(180, 176, 176);
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+header .titulo__principal h1 {
+  font-size: 1.5rem;
+  animation: titulo_principal 2s ease;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  background: rgb(241, 239, 239);
+  border: none;
+  border-radius: 10px;
+}
+.card .img-fluid {
+  width: 200px;
+  height: 180px;
+}
+.card .fragancia {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8E0384;
+}
+.card .card-body {
+  background-color: rgb(215, 211, 211);
+  border-radius: 0 0 10px 10px;
+}
+.card .card-body .card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 0;
+}
+.card .card-body #flecha {
+  font-size: 1rem;
+  animation-name: flecha;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: white;
+}
+.card .card-body .card__cantidad {
+  width: 2.5rem;
+  border-radius: 5px;
+  border: none;
+}
+.card .card-body .btn {
+  border: none;
+}
+.card .card-body .contenido {
+  color: white;
+  font-size: 0.8rem;
+}
+.card .card-body .precio {
+  color: #8E0384;
+}
+
+footer {
+  background-image: url("../images/pantallas/footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 10px 10px;
+}
+footer img {
+  width: 2rem;
+}
+
+.formulario {
+  background-color: rgb(241, 239, 239);
+}
+.formulario .form--textarea {
+  height: 300px;
+  overflow: scroll;
+  resize: none;
+}
+.formulario .boton--formulario:hover {
+  background-color: white;
+  color: #8E0384;
+}
+
+/* quienes somos */
+.quienes-somos {
+  background-color: gray;
+  border-radius: 10px 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .quienes-somos {
+    background-image: url("../images/pantallas/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+.card{
+    @include centrarYmargin(0px);
+    background:$color-primario-card ;
+    border: none;
+    border-radius:10px;
+    .img-fluid{
+        width: 200px;
+        height: 180px;
+        
+    }
+    .fragancia{
+        font-size:map-get($Zise,zise2);
+        font-weight:bold;
+        color:$color-hover ;
+    }
+    .card-body{
+        background-color:$color-secundario-card ;
+        border-radius:0 0 10px 10px;
+        .card-title{
+            font-size:map-get($Zise,zise2);
+            font-weight:bold;
+            color:$color-texto ;
+            border-radius:map-get($Zise,zise0);
+            margin-bottom:0;
+        }
+        #flecha{
+            font-size:map-get($Zise,zise2);
+            animation-name:flecha;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;	
+            color:$color-texto;
+        }
+        .card__cantidad{
+            width: map-get($Zise,zise5);
+            border-radius: 5px;
+            border:none;
+        }
+        .btn{
+            border: none;
+            @extend %botones;
+        }
+        .contenido{
+            color:$color-texto;
+            font-size:map-get($Zise,zise1);
+        }
+        .precio{
+            color:$color-hover; 
+        }      
+    }
+}
+

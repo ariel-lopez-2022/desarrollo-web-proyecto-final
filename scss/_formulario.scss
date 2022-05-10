@@ -1,0 +1,21 @@
+.formulario{
+    background-color:rgb(241, 239, 239); 
+    .form--textarea {
+        height: 300px;
+        overflow: scroll;
+        resize: none;
+    }
+
+    .boton--formulario{
+        @extend %botones;
+    }
+    .boton--formulario:hover{
+        background-color: $color-texto;
+        color: $color-hover;
+    }
+
+}
+ 
+
+
+

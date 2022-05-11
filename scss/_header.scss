@@ -1,4 +1,5 @@
 header{
+    
     background-image: url("../images/pantallas/header-2.svg");
     background-repeat: no-repeat;
     background-size:cover ;
@@ -29,6 +30,8 @@ header{
     .dropdown-menu{
         background:$color-botones;
         .dropdown-item{
+           
+
             color:$color-texto;
             &:hover {
                 background:$color-hover;
@@ -37,11 +40,16 @@ header{
     }
     .titulo__principal{
         @include tituloPrincipal;
-        h1{
-           font-size:map-get($Zise,zise5); 
-           font-weight:900;
-           animation: titulo_principal 2s ease;
-        } 
-    }               
-}     
+      
+      
+      h1{
+        font-size:map-get($Zise,zise5); 
+        font-weight:900;
+       
+      } 
+      
+    }
+      
+}               
+     
 

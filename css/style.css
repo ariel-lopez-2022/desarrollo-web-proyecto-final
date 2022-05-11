@@ -2,7 +2,25 @@
 /* map para tamaños de fontzise y otros */
 /* mixin se utiliza como una clase propia en productos*/
 /* mixin se utiliza como solo para estilo de titulo principal*/
+/*
+@mixin tituloPrincipal() {
+    color: rgb(180, 176, 176);
+    text-shadow: 0 1px 0 #ccc, 
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+
+}*/
 body {
+  font-family: "Inter", sans-serif;
   font-family: "Roboto", sans-serif;
   display: grid;
   min-height: 100vh;
@@ -51,6 +69,15 @@ body main .centrar-margin {
     color: #f938ec;
   }
 }
+/* animacion titulo principal*/
+@keyframes texto {
+  0%, 100% {
+    clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
 header {
   background-image: url("../images/pantallas/header-2.svg");
   background-repeat: no-repeat;
@@ -88,14 +115,21 @@ header .dropdown-menu .dropdown-item:hover {
   background: #8E0384;
 }
 header .titulo__principal {
-  color: rgb(180, 176, 176);
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  /*@include tituloPrincipal;*/
 }
 header .titulo__principal h1 {
-  font-size: 1.5rem;
-  animation: titulo_principal 2s ease;
+  font-size: 3.5rem;
+  font-weight: 900;
+  /* animation: titulo_principal 2s ease;*/
 }
 
+@media screen and (min-width: 320px) {
+  .titulo__principal h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    /* animation: titulo_principal 2s ease;*/
+  }
+}
 .card {
   display: flex;
   justify-content: center;
@@ -103,6 +137,11 @@ header .titulo__principal h1 {
   background: rgb(241, 239, 239);
   border: none;
   border-radius: 10px;
+  box-shadow: 3px 3px 5px 3px #999;
+  transition: all 0.5s;
+}
+.card:hover {
+  box-shadow: 0px 20px 16px rgb(119, 119, 119);
 }
 .card .img-fluid {
   width: 200px;

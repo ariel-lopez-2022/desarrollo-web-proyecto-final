@@ -1,18 +1,27 @@
 .card{
+    
     @include centrarYmargin(0px);
     background:$color-primario-card ;
     border: none;
     border-radius:10px;
+    box-shadow: 3px 3px 5px 3px #999;
+    transition: all 0.5s; 
+      &:hover{
+        box-shadow: 0px 20px 16px rgb(119, 119, 119);
+        
+      }
     .img-fluid{
         width: 200px;
         height: 180px;
         
     }
+   
     .fragancia{
         font-size:map-get($Zise,zise2);
         font-weight:bold;
         color:$color-hover ;
     }
+    
     .card-body{
         background-color:$color-secundario-card ;
         border-radius:0 0 10px 10px;

@@ -36,24 +36,12 @@ header{
         }
     }
     .titulo__principal{
-        /*@include tituloPrincipal;*/
+        @include tituloPrincipal;
         h1{
-           font-size:map-get($Zise,zise6); 
+           font-size:map-get($Zise,zise5); 
            font-weight:900;
-            
-           /* animation: titulo_principal 2s ease;*/
+           animation: titulo_principal 2s ease;
         } 
     }               
 }     
 
-@media screen and (min-width: 320px) {
-    
-    .titulo__principal{
-        h1{
-           font-size:map-get($Zise,zise2); 
-           font-weight:400;
-            
-           /* animation: titulo_principal 2s ease;*/
-        } 
-    }              
-}

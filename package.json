@@ -1,12 +1,24 @@
 {
-  "name": "proyecto_boostrap_sass",
+  "dependencies": {
+    "sass": "^1.51.0"
+  },
+  "name": "proyecto-fianl-coderhouse",
+  "description": "",
   "version": "1.0.0",
-  "description": "se trabajo con (Html - css - boostrap -sass)",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariel-lopez-2022/proyecto-final-coderhouse.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariel-lopez-2022/proyecto-final-coderhouse/issues"
+  },
+  "homepage": "https://github.com/ariel-lopez-2022/proyecto-final-coderhouse#readme"
 }

@@ -1,29 +1,5 @@
 @charset "UTF-8";
 /* map para tamaños de fontzise y otros */
-/* mixin se utiliza como una clase propia en productos*/
-/* mixin se utiliza como solo para estilo de titulo principal*/
-body {
-  font-family: "Inter", sans-serif;
-  font-family: "Roboto", sans-serif;
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
-}
-body main .centrar-margin {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-/*   extend para  botones de productos y formularios */
-.formulario .boton--formulario, .card .card-body .btn {
-  background: #8E0384;
-  padding: 0.5rem;
-  color: white;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
 /*Animacion Titulo principal header*/
 @keyframes titulo_principal {
   0% {
@@ -52,6 +28,30 @@ body main .centrar-margin {
     color: #f938ec;
   }
 }
+/* mixin se utiliza como una clase propia en productos*/
+/* mixin se utiliza como solo para estilo de titulo principal*/
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+body main .centrar-margin {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/*   extend para  botones de productos y formularios */
+.formulario .boton--formulario, .card .card-body .btn {
+  background: #8E0384;
+  padding: 0.5rem;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
 header {
   background-image: url("../images/pantallas/header-2.svg");
   background-repeat: no-repeat;
@@ -95,6 +95,7 @@ header .titulo__principal {
 header .titulo__principal h1 {
   font-size: 2.5rem;
   font-weight: 900;
+  animation: titulo_principal 2s ease;
 }
 
 .card {

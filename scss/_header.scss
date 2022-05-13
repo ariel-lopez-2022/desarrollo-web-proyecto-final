@@ -40,12 +40,11 @@ header{
     }
     .titulo__principal{
         @include tituloPrincipal;
-      
-      
-      h1{
+      h1{ 
+        
         font-size:map-get($Zise,zise5); 
         font-weight:900;
-       
+        animation:titulo_principal 2s ease;
       } 
       
     }

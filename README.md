@@ -7,4 +7,7 @@
      - sass
      - Boostrap (cdn)
      - Git - GitHub 
-     - Seo Basico (etiquetas meta keywords/description ) 
+     - Seo Basico 
+          (Etiquetas meta keywords/description) 
+          (Restructuracion de etiquetas h segun su categoria)
+          (Etiquetas Title) 

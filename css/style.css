@@ -30,6 +30,16 @@
 }
 /* mixin se utiliza como una clase propia en productos*/
 /* mixin se utiliza como solo para estilo de titulo principal*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -99,7 +109,7 @@ header .titulo__principal h1 {
 }
 
 .card {
-  width: 335px;
+  width: 300px;
   display: flex;
   justify-content: center;
   margin-bottom: 0px;

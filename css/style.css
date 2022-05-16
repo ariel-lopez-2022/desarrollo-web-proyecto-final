@@ -36,10 +36,6 @@
   box-sizing: border-box;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Inter", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -201,6 +197,13 @@ footer img {
 .quienes-somos {
   background-color: gray;
   border-radius: 10px 10px;
+}
+.quienes-somos p {
+  font-size: 30px;
+  color: white;
+}
+.quienes-somos .parrafo--2 {
+  margin-top: 113px;
 }
 
 @media screen and (min-width: 992px) {

@@ -2,6 +2,15 @@
 .quienes-somos{
    background-color:gray;
    border-radius:10px 10px ; 
+  
+      p{
+          font-size:30px;
+          color:white;
+      }
+      .parrafo--2{
+          margin-top:113px;
+          
+      }
 }
 @media screen and (min-width: 992px) {
     .quienes-somos{

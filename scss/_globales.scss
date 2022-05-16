@@ -9,9 +9,7 @@ $color-secundario-card:rgb(215, 211, 211);
   margin:0;
   box-sizing: border-box;  
 }
-html, body{
-    overflow-x: hidden;
-}
+
 body{
     
     font-family: 'Inter', sans-serif;
@@ -33,7 +31,8 @@ body{
     font-size:map-get($Zise,zise1);
     font-weight:bold;
 }
-   
+
+
 
 
 

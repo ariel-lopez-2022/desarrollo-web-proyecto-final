@@ -42,8 +42,7 @@ header{
         @include tituloPrincipal;
       h1{ 
         
-        font-size:map-get($Zise,zise5); 
-        font-weight:900;
+       
         animation:titulo_principal 2s ease;
       } 
       
@@ -51,4 +50,13 @@ header{
       
 }               
      
-
+@media screen and (min-width: 576px) {
+    .titulo__principal{
+    h1{
+        font-size:map-get($Zise,zise5); 
+        font-weight:bold;
+           
+    }
+}
+}                
+                

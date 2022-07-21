@@ -1,4 +1,4 @@
-# Proyecto Final CoderHouse
+# Proyecto Final CoderHouse Desarrollo Web
 ## Amalu Aromatizantes
 ### Sitio web venta de productos Aromatizantes
 #### Herramientas Utilizadas
